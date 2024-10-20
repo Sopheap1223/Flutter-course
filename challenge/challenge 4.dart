@@ -35,10 +35,10 @@ class Distance{
 }
 
 main() {
-  Point p1 = Point(1, 2);
-  print(p1);
+  // Point p1 = Point(1, 2);
+  // print(p1);
 
-  print(p1);
+  // print(p1);
   Distance d1 = Distance.kms(3.4);
   Distance d2 = Distance.meters(1000);
   print((d1+d2).kms);
