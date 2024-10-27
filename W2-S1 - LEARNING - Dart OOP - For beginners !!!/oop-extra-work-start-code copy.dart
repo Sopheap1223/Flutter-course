@@ -1,6 +1,5 @@
 
 import 'dart:ffi';
-import 'dart:html';
 enum type{square("square"), circle("circle"), triangle("triangle"), ractangle("ractangle");
   final String label;
   const type (this.label);

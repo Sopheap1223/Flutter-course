@@ -1,4 +1,3 @@
-import 'dart:html';
 
 enum Direction { north, east, south, west;
 
