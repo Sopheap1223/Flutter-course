@@ -14,7 +14,7 @@ void main() {
       goodAnswer: 'red');
 
   List<Question> myQuestions = [q1, q2];
-  Quiz myQuiz = Quiz(title: "Crazy Quizz", questions: myQuestions);
+  Quiz myQuiz = Quiz(title: "Hello", questions: myQuestions);
 
   runApp(QuizApp(myQuiz));
 }
