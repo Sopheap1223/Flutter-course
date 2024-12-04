@@ -14,9 +14,10 @@ enum QuizState {
 }
 
 class QuizApp extends StatefulWidget {
+  final Quiz quiz;
   const QuizApp(this.quiz, {Key? key}) : super(key: key);
 
-  final Quiz quiz;
+  
 
   @override
   State<QuizApp> createState() => _QuizAppState();
@@ -30,7 +31,7 @@ class _QuizAppState extends State<QuizApp> {
   void _resetQuiz() {
     setState(() {
       _quizState = QuizState.notStarted;
-      _submission = Submission(); // Clear all answers
+      _submission.removeAnswers(); // Clear all answers
       _currentQuestionIndex = 0;
     });
   }
